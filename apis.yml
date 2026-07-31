@@ -1,7 +1,27 @@
 aid: ollin-bio
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ollin-bio.png
 name: Ollin Bio
-description: Ollin Bio is a company surfaced as a portfolio company of a16z and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Ollin Bio is a privately held biotechnology company developing novel
+  therapeutics, organizing its work around defined therapeutic areas and a
+  product pipeline of drug candidates in development. Backed by a16z, the
+  company was added to the API Evangelist network as a portfolio-company lead.
+  As a research-stage therapeutics company, Ollin Bio publishes a marketing and
+  corporate website but does not expose a public developer program, API,
+  documentation, or SDKs at this time. This profile records the company's
+  public identity and web properties; it will be re-enriched if a public API
+  surface ever appears.
 url: https://raw.githubusercontent.com/api-evangelist/ollin-bio/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +31,32 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Biotechnology
+- Therapeutics
+- Life Sciences
+- Drug Development
+- Pharmaceuticals
+- a16z Portfolio
 apis: []
+common:
+- type: DomainSecurity
+  url: security/ollin-bio-domain-security.yml
+- type: Website
+  url: https://ollin.bio/
+- type: PrivacyPolicy
+  url: https://ollin.bio/privacy-policy/
+- type: TermsOfService
+  url: https://ollin.bio/terms-of-use/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
